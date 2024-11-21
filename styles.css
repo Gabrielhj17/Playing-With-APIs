@@ -1,37 +1,119 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
 }
 
-h1 {
-    color: #343a40;
+.main-content {
+    display: flex; /* Make the main content a flex container */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Ensure text aligns correctly */
+    width: 100%; /* Stretch full width */
+    flex: 1; /* Allow it to expand and take available space */
+    gap: 1.5rem; /* Add spacing between elements */
 }
 
-p {
-    color: #6c757d;
-    font-size: 18px;
+/* Centering and setting the size for the image */
+.image-container img {
+    width: 400px;  /* Set the width to 400px */
+    height: 400px; /* Set the height to 400px */
+    object-fit: cover; /* Crop the image if it doesn't fit exactly */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 5%;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #6c63ff, #a5a5ff);
     color: white;
-    background-color: #007bff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid #4e4bd8;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn.cat {
+    background: #ff6363;
 }
 
-#fact {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #343a40;
-    font-weight: bold;
+.btn.cat:hover {
+    background: #e15555;
+}
+
+.btn.dog {
+    background: #63a4ff;
+}
+
+.btn.dog:hover {
+    background: #5591e3;
+}
+
+.fact-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.fact-box p {
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    width: 100%;
 }
